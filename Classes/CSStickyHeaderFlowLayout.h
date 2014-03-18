@@ -14,6 +14,8 @@ extern NSString *const CSStickyHeaderParallaxHeader;
 
 @property (nonatomic) CGSize parallaxHeaderReferenceSize;
 @property (nonatomic) CGSize parallaxHeaderMinimumReferenceSize;
-@property (nonatomic) BOOL disableStickyHeaders;
+@property (nonatomic, getter = isStickyHeadersDisabled) BOOL disableStickyHeaders;
+//A hack!! Remove later
+@property (nonatomic, assign) BOOL isBehindNavigationbar;
 
 @end
